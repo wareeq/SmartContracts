@@ -8,7 +8,17 @@ contract Inbox {
         message = _message;
     }
 
+/*
+     //i removed this accessor because by default a public field/variable has an accessor.
+
+    function getMessage() public view returns(string memory){
+      return message;
+    }
+
+  */
+
     function setMessage(string memory _message) public {
       message = _message;
     }
+
 }
